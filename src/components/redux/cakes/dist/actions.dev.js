@@ -8,6 +8,7 @@ exports.addCake = exports.buyCake = void 0;
 var _type = require("./type");
 
 var buyCake = function buyCake() {
+  console.log("enter buycake");
   return {
     type: _type.BUY_CAKE
   };

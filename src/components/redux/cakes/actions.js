@@ -5,6 +5,7 @@ import
 } from "./type"
 
 const buyCake=()=>{
+    console.log("enter buycake");
     return{
         type: BUY_CAKE
     }
