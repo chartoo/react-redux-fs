@@ -3,7 +3,6 @@ import {
     GET_USER_SUCCESS,
     GET_USER_FAIL
 } from '../users/type';
-
 const initialState={
     loading:false,
     users:[],
