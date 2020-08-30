@@ -24,13 +24,13 @@ var cakeReducer = function cakeReducer() {
   switch (action.type) {
     case _type.BUY_CAKE:
       return _objectSpread({}, state, {
-        numOfCakes: state.numOfCakes - 1
+        numOfCakes: state.numOfCakes - action.payload
       });
 
     case _type.ADD_CAKE:
       {
         return _objectSpread({}, state, {
-          numOfCakes: state.numOfCakes + 1
+          numOfCakes: state.numOfCakes + action.payload
         });
       }
 

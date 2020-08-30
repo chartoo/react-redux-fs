@@ -6,6 +6,7 @@ import {
 } from './redux/users/action'
 import { connect } from 'react-redux'
 import UserList from './UserList'
+import CakeHook from './CakeHook'
 const axios = require('axios')
 
 const userList=(props)=>{
@@ -20,6 +21,8 @@ function CakeContainer(props) {
     console.log(props);
     return (
         <div>
+            <CakeHook></CakeHook>
+            <h2>Use Map State and Dispatch</h2>
             <h2>Number of cakes - {props.numOfCakes}</h2>
             <button onClick={props.buyCake}>Buy Cake</button> &emsp;
             <button onClick={props.addCake}>Add Cake</button>

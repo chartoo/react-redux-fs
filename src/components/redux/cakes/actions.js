@@ -4,15 +4,16 @@ import
     ADD_CAKE
 } from "./type"
 
-const buyCake=()=>{
-    console.log("enter buycake");
+const buyCake=(number=1)=>{
     return{
-        type: BUY_CAKE
+        type: BUY_CAKE,
+        payload:number
     }
 }
-const addCake=()=>{
+const addCake=(number=1)=>{
     return {
-        type : ADD_CAKE
+        type : ADD_CAKE,
+        payload:number
     }
 }
 
