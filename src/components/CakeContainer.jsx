@@ -7,6 +7,7 @@ import {
 import { connect } from 'react-redux'
 import UserList from './UserList'
 import CakeHook from './CakeHook'
+// import PayloadCake from './PayloadCake'
 const axios = require('axios')
 
 const userList=(props)=>{
@@ -21,6 +22,7 @@ function CakeContainer(props) {
     console.log(props);
     return (
         <div>
+            {/* <PayloadCake></PayloadCake> */}
             <CakeHook></CakeHook>
             <h2>Use Map State and Dispatch</h2>
             <h2>Number of cakes - {props.numOfCakes}</h2>
